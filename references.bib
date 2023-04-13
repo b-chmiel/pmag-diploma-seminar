@@ -1,6 +1,71 @@
-@book{texbook,
-  author    = {Donald E. Knuth},
-  year      = {1986},
-  title     = {The {\TeX} Book},
-  publisher = {Addison-Wesley Professional}
+@misc{Copyfs,
+  author       = {Nicolas Vigier and Thomas Joubert},
+  title        = {A copy-on-write, versioned filesystem},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/cognusion/fuse-copyfs}},
+  note         = {{Accessed: 2023-04-13}},
+  year         = {2022}
+}
+
+@article{BtrfsStructure,
+  author  = {Hilgert, Jan-Niclas and Lambertz, Martin and Yang, Shujian},
+  year    = {2018},
+  month   = {07},
+  pages   = {S21-S29},
+  title   = {Forensic analysis of multiple device BTRFS configurations using The Sleuth Kit},
+  volume  = {26},
+  journal = {Digital Investigation},
+  doi     = {10.1016/j.diin.2018.04.020}
+}
+
+@misc{ZfsStructure,
+author = {{Beckhoff}},
+howpublished = {\url{https://infosys.beckhoff.com}},
+note = {{Accessed: 2023-04-13}},
+title = {{Beckhoff Information System - ZFS properties}}
+}
+
+@article{LinuxLogStructuredFileSystem,
+  author     = {Ryusuke Konishi and Yoshiji Amagai and Koji Sato and
+                Hisashi Hifumi and Seiji Kihara and Satoshi Moriai},
+  title      = {{The Linux Implementation of a Log-Structured File
+                System}},
+  year       = {2006},
+  issue_date = {July 2006},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {40},
+  number     = {3},
+  issn       = {0163-5980},
+  url        = {https://doi.org/10.1145/1151374.1151375},
+  doi        = {10.1145/1151374.1151375},
+  abstract   = {Toward enhancing the reliability of the Linux file
+                system, we are developing a new log-structured file
+                system (NILFS) for the Linux operating system. Instead
+                of overwriting existing blocks, NILFS appends
+                consistent sets of modified or newly created blocks
+                continuously into segmented disk regions. This writing
+                method allows NILFS to achieve faster recovery time and
+                higher write performance. The address of the block that
+                is written to changes for each write, which makes it
+                difficult to apply modern file system technologies such
+                as B-tree structures. To permit such writing on the
+                Linux kernel basis, NILFS has its own write mechanism
+                that handles data and meta data as one unit and allows
+                them to be relocated. This paper presents the design
+                and implementation of NILFS focussing on the write
+                mechanism.},
+  journal    = {SIGOPS Oper. Syst. Rev.},
+  month      = jul,
+  pages      = {102--107},
+  numpages   = {6}
+}
+
+@misc{DedupTechTarget,
+author = {Garry Kranz and Stephen J. Bigelow},
+title = {{data deduplication}},
+year = 2019,
+month = mar,
+howpublished = {\url{https://www.techtarget.com/searchstorage/definition/data-deduplication}}
 }
