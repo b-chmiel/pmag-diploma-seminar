@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[style=ieee]{biblatex}
 
+\setbeamertemplate{caption}[numbered]
 
 \addbibresource[]{references.bib}
 
@@ -35,7 +36,6 @@
 		\begin{enumerate}
 			\item Introduction
 			\item Literature review
-			\item Areas for improvement
 			\item Thesis goal
 			\item Thesis scope
 		\end{enumerate}
@@ -46,17 +46,44 @@
 			\item What is a filesystem?
 			\item What is a versioning filesystem?
 			\item What is a data deduplication?
-			\item How deduplication works in a filesystem?
 		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Introduction --- What is a filesystem?}
-		
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{media/Ext2.png}
+			\caption{Ext2 on-disk representation \footfullcite{FossCoepExt2}}
+		\end{figure}
+	\end{frame}
+	\note{
+		A software component that imposes structure on the address space of one 
+		or more storage elements or virtual disks so that applications may deal 
+		with files.
+
+		File systems are often supplied as operating system components, but are 
+		also implemented and marketed as independent software components. \footnotecite{SniaDictionary}
+	}
+
+	\begin{frame}{Introduction --- What is a filesystem?}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\textwidth]{media/fs2.png}
+			\caption{Filesystem as a component of the Linux kernel \footfullcite{IbmVfs}}
+		\end{figure}	
 	\end{frame}
 
 	\begin{frame}{Introduction --- What is a versioning filesystem?}
-		
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{media/versioning.jpg}
+			\caption{Example of file versioning in APFS \footfullcite{IGeeksBlog}}
+		\end{figure}	
 	\end{frame}
+	\note{
+		APFS --- Apple File System
+		Time Machine software
+	}
 
 	\begin{frame}{Introduction --- What is a data deduplication}
 		\begin{figure}
@@ -65,10 +92,11 @@
 			\caption{Data deduplication types\footfullcite{DedupTechTarget}}
 		\end{figure}
 	\end{frame}
-
-	\begin{frame}{Introduction --- ?}
-			
-	\end{frame}
+	\note{
+		The replacement of multiple copies of data, at variable levels of 
+		granularity, with references to a shared copy in order to save storage 
+		space and/or data transferred. \footnotecite{SniaDictionary}
+	}
 
 	\begin{frame}{Literature review}
 		\begin{itemize}
@@ -86,7 +114,6 @@
 
 			\includegraphics[width=0.9\textwidth]{media/nilfs.png}
 			\caption{The block diagram of the NILFS filesystem \footfullcite{LinuxLogStructuredFileSystem}}
-			\label{fig:nifls}
 		\end{figure}	
 	\end{frame}
 
@@ -96,7 +123,6 @@
 
 			\includegraphics[width=\textwidth]{media/zfs.png}
 			\caption{The structure of the ZFS filesystem \footfullcite{ZfsStructure}}
-			\label{fig:zfs}
 		\end{figure}
 		
 	\end{frame}
@@ -107,7 +133,6 @@
 
 			\includegraphics[width=\textwidth]{media/btrfs.png}
 			\caption{The structure of the Btrfs filesystem \footfullcite{BtrfsStructure}}
-			\label{fig:btrfs}
 		\end{figure}
 			
 	\end{frame}
@@ -118,7 +143,6 @@
 
 			\includegraphics[width=\textwidth]{media/copyfs.png}
 			\caption{Excerpt from CopyFS README \footfullcite{Copyfs}}
-			\label{fig:copyfs}
 		\end{figure}
 		
 	\end{frame}
@@ -129,7 +153,6 @@
 
 			\includegraphics[width=\textwidth]{media/waybackfs-history.png}
 			\caption{Wayback versioning file preview (own work)}
-			\label{fig:wayback_versioning_history}
 		\end{figure}
 	\end{frame}
 
@@ -172,7 +195,7 @@
 			podczas przeglądu literaturowego
 	}
 
-	\begin{frame}{References}
+	\begin{frame}[allowframebreaks]{References}
 		\printbibliography
 	\end{frame}
 

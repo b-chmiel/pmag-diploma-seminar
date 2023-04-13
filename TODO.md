@@ -1,7 +1,5 @@
 # TODO
 
-- [ ] introduction
-- [ ] bibliography (does not fit on last page)
-- [ ] areas for improvement
-- [ ] copyfs versioning directory structure (via `tree` utility or sth similar)
+- [x] introduction
+- [x] bibliography (does not fit on last page)
 - [ ] draft notes on what to say about each filesystem
