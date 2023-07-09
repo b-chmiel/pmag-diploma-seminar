@@ -1,0 +1,87 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'activity-diagram_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{699.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.62379421)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{activity-diagram_svg-tex.pdf}}%
+    \put(0.1406403,0.585209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Deduplication extension\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{activity-diagram_svg-tex.pdf}}%
+    \put(0.50505616,0.585209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NILFS API\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{activity-diagram_svg-tex.pdf}}%
+    \put(0.64010439,0.585209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Segment Constructor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{activity-diagram_svg-tex.pdf}}%
+    \put(0.83195863,0.585209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Garbage Collector\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{activity-diagram_svg-tex.pdf}}%
+    \put(0.03989003,0.3397642){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4. Find duplicates\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{activity-diagram_svg-tex.pdf}}%
+    \put(0.24674962,0.41050375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3. Calculate data block\end{tabular}}}}%
+    \put(0.29069389,0.38906752){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}checksum\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{activity-diagram_svg-tex.pdf}}%
+    \put(0.4804045,0.49517685){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2. Read data block\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{activity-diagram_svg-tex.pdf}}%
+    \put(0.29712476,0.24330118){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6. Deduplicate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{activity-diagram_svg-tex.pdf}}%
+    \put(0.65832519,0.1414791){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7. Flush changes\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{activity-diagram_svg-tex.pdf}}%
+    \put(0.82552776,0.08896034){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8. Perform Garbage\end{tabular}}}}%
+    \put(0.85982572,0.06752412){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Collection\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{activity-diagram_svg-tex.pdf}}%
+    \put(0.01309475,0.46302251){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1. Are there any not processed data blocks?\end{tabular}}}}%
+    \put(0.01309475,0.21007503){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5. Are there any not processed duplicates?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{activity-diagram_svg-tex.pdf}}%
+    \put(0.1878,0.26045016){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}YES\end{tabular}}}}%
+    \put(0.06882894,0.17256163){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NO\end{tabular}}}}%
+    \put(0.06668532,0.42979636){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NO\end{tabular}}}}%
+    \put(0.27354491,0.50696677){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}YES\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
